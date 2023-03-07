@@ -236,13 +236,193 @@
     <string>刷新</string>
    </property>
   </widget>
+  <widget class="QTextEdit" name="textEdit_SetLight2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>430</y>
+     <width>104</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_SetLight3">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>560</y>
+     <width>104</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MonitorName2">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>331</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>监测通路2</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_MonitorChannel1_2">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>331</y>
+     <width>287</width>
+     <height>87</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_UnitName2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>331</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lux</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SetLight2">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>425</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>通路2照度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Set2">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>425</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MonitorName3">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>461</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>监测通路3</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_MonitorChannel3">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>461</y>
+     <width>287</width>
+     <height>87</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_UnitName3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>461</y>
+     <width>30</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lux</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SetLight3">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>555</y>
+     <width>90</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>通路3照度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Set3">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>555</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+  </widget>
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>200</y>
+     <x>31</x>
+     <y>201</y>
      <width>421</width>
-     <height>101</height>
+     <height>81</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -280,169 +460,39 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0" colspan="3">
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_SetLight1">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>通路1照度</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEdit_SetLight1"/>
-      </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="pushButton_Set1">
-        <property name="text">
-         <string>设置</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
    </layout>
   </widget>
   <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>330</y>
+     <y>290</y>
      <width>421</width>
-     <height>101</height>
+     <height>31</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout_3">
+   <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
-     <widget class="QLabel" name="label_MonitorName2">
+     <widget class="QLabel" name="label_SetLight1">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
        </font>
       </property>
       <property name="text">
-       <string>监测通路2</string>
+       <string>通路1照度</string>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QTextEdit" name="textEdit_MonitorChannel1_2">
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
+     <widget class="QTextEdit" name="textEdit_SetLight1"/>
     </item>
     <item row="0" column="2">
-     <widget class="QLabel" name="label_UnitName2">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
+     <widget class="QPushButton" name="pushButton_Set1">
       <property name="text">
-       <string>Lux</string>
+       <string>设置</string>
       </property>
      </widget>
-    </item>
-    <item row="1" column="0" colspan="3">
-     <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_SetLight2">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>通路2照度</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEdit_SetLight2"/>
-      </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="pushButton_Set2">
-        <property name="text">
-         <string>设置</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>460</y>
-     <width>421</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_5">
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_MonitorName3">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>监测通路3</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QTextEdit" name="textEdit_MonitorChannel3">
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="label_UnitName3">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Lux</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0" colspan="3">
-     <layout class="QGridLayout" name="gridLayout_6">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label_SetLight3">
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>通路3照度</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEdit_SetLight3"/>
-      </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="pushButton_Set3">
-        <property name="text">
-         <string>设置</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </item>
    </layout>
   </widget>

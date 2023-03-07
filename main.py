@@ -2,8 +2,8 @@
 # File       : main.py
 # Encoding   : utf-8
 # Date       ：2023/3/7
-# Author     ：
-# Email      ：
+# Author     ：LiFZ
+# Email      ：lifzcn@gmail.com
 # Version    ：python 3.9
 # Description：
 """
@@ -43,13 +43,22 @@ class mainWindow(QMainWindow, Ui_Form):
         self.pushButton_Set3.clicked.connect(self.setChannelValue3)
 
     def setChannelValue1(self):
-        pass
+        txData1 = self.lineEdit_SetLight1.toPlainText()
+        if len(txData1) == 0:
+            return
+        self.com.write(txData1.encode("utf-8"))
 
     def setChannelValue2(self):
-        pass
+        txData2 = self.lineEdit_SetLight2.toPlainText()
+        if len(txData2) == 0:
+            return
+        self.com.write(txData2.encode("utf-8"))
 
     def setChannelValue3(self):
-        pass
+        txData3 = self.lineEdit_SetLight3.toPlainText()
+        if len(txData3) == 0:
+            return
+        self.com.write(txData3.encode("utf-8"))
 
     def showTime(self):
         self.label_CurrentTime.setText(time.strftime("%B %d,%H:%M:%S", time.localtime()))
