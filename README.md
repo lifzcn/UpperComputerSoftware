@@ -1,0 +1,2 @@
+# UpperComputerSoftware
+ 基于PyQt5开发的智能照明控制系统上位机软件
