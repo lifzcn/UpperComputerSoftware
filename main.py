@@ -43,22 +43,25 @@ class mainWindow(QMainWindow, Ui_Form):
         self.pushButton_Set3.clicked.connect(self.setChannelValue3)
 
     def setChannelValue1(self):
-        txData1 = self.lineEdit_SetLight1.toPlainText()
+        txData1 = "#1-" + self.textEdit_SetLight1.toPlainText()
         if len(txData1) == 0:
             return
         self.com.write(txData1.encode("utf-8"))
+        self.textEdit_SetLight1.clear()
 
     def setChannelValue2(self):
-        txData2 = self.lineEdit_SetLight2.toPlainText()
+        txData2 = "#2-" + self.textEdit_SetLight2.toPlainText()
         if len(txData2) == 0:
             return
         self.com.write(txData2.encode("utf-8"))
+        self.textEdit_SetLight2.clear()
 
     def setChannelValue3(self):
-        txData3 = self.lineEdit_SetLight3.toPlainText()
+        txData3 = "#3-" + self.textEdit_SetLight3.toPlainText()
         if len(txData3) == 0:
             return
         self.com.write(txData3.encode("utf-8"))
+        self.textEdit_SetLight3.clear()
 
     def showTime(self):
         self.label_CurrentTime.setText(time.strftime("%B %d,%H:%M:%S", time.localtime()))
@@ -66,11 +69,14 @@ class mainWindow(QMainWindow, Ui_Form):
     def receiveData(self):
         try:
             rxData = bytes(self.com.readAll())
+            rxDataList = rxData.decode("utf-8").split(',')
         except:
             QMessageBox.critical(self, "严重错误", "串口接收数据错误!")
         if self.checkBox_HexShow.isChecked() == False:
             try:
-                self.textEdit_MonitorChannel1.insertPlainText(rxData.decode("utf-8"))
+                self.textEdit_MonitorChannel1.insertPlainText(rxDataList[0] + '\n')
+                self.textEdit_MonitorChannel2.insertPlainText(rxDataList[1] + '\n')
+                self.textEdit_MonitorChannel3.insertPlainText(rxDataList[2])
             except:
                 pass
         else:
