@@ -43,21 +43,21 @@ class mainWindow(QMainWindow, Ui_Form):
         self.pushButton_Set3.clicked.connect(self.setChannelValue3)
 
     def setChannelValue1(self):
-        txData1 = self.textEdit_SetLight1.toPlainText() + ".1"
+        txData1 = self.textEdit_SetLight1.toPlainText() + ".1\n"
         if len(txData1) == 0:
             return
         self.com.write(txData1.encode("utf-8"))
         self.textEdit_SetLight1.clear()
 
     def setChannelValue2(self):
-        txData2 = self.textEdit_SetLight2.toPlainText() + ".2"
+        txData2 = self.textEdit_SetLight2.toPlainText() + ".2\n"
         if len(txData2) == 0:
             return
         self.com.write(txData2.encode("utf-8"))
         self.textEdit_SetLight2.clear()
 
     def setChannelValue3(self):
-        txData3 = self.textEdit_SetLight3.toPlainText() + ".3"
+        txData3 = self.textEdit_SetLight3.toPlainText() + ".3\n"
         if len(txData3) == 0:
             return
         self.com.write(txData3.encode("utf-8"))
